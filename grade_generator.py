@@ -1,6 +1,6 @@
 print("Hi, and welcome to the Grade Generator! Please input the necessary datas to get your score calculated.")
 score = int(input("What score did you get? "))
-percentage = round(float(score // 100 )* 100, 2)
+percentage = round(float(score / 50 )* 100, 2)
 if score < 50:
 	print(f"""Your score is \033[1;33m{percentage}\033[1;0m%, and you got an \033[0;31mU\033[0m for that. Sorry, I think this field is just not for you :(""")
 elif score >= 50 and score < 60:
